@@ -9,7 +9,7 @@ plotData[1]<-lapply(plotData[1],as.Date,format="%d/%m/%Y")
 time<-paste(plotData$Date,plotData$Time)
 plotData$Time<-strptime(time,format="%Y-%m-%d %H:%M:%S")
 
-#plot the second graph,default png size is 480*480
+#plot the fourth graph,default png size is 480*480
 png(filename="plot4.png")
 par(mfcol=c(2,2))
 #upleft
